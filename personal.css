@@ -3,6 +3,7 @@ label{ font:13px verdana!important}
     display: flex;
     flex-wrap: wrap;
     margin: 0 -0.5rem; /* Negative margin to offset padding */
+    column-gap: 2rem;
   }
   
   .form-group {
@@ -46,5 +47,5 @@ label{ font:13px verdana!important}
     width:60%;
   }
   .form-col-13{
-    padding-bottom: 5%;
+    padding-bottom: 2%;
   }
