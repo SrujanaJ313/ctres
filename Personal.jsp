@@ -196,7 +196,7 @@
 							</tr>
 						</table> -->
 						<div class="form-row">
-							<div>
+							<div class="form-row-inside">
 								<div class="form-col-20">
 								  <label for="cmtFirstName">
 									<span class="star">*</span> 
@@ -214,7 +214,7 @@
 								</div>
 							</div>
 
-							<div>
+							<div class="form-row-inside">
 								<div class="form-col-20">
 								  <label for="cmtMiddleInitial" class="notmandatory"> 
 									<spring:bind path="cmtMiddleInitial">
@@ -231,7 +231,7 @@
 								</div>
 							</div>
 
-							<div>
+							<div class="form-row-inside">
 								<div class="form-col-13">
 								  <span style="padding-left:8%"></span>
 								  <label for="cmtLastName"><span class="star">*</span> 

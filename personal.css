@@ -1,90 +1,23 @@
-/* Root font-size for rem units (1rem = 16px by default) */
-:root {
-    --gap-size: 0.75rem;  /* 12px */
-    --row-spacing: 1rem;  /* 16px */
-    --min-col-width: 10rem; /* 160px - minimum before stacking */
-    --input-height: 2.25rem; /* 36px */
-  }
-  
-  /* Container for the form */
-  .form-container {
-    width: min(100%, 75rem); /* 1200px max */
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  /* Flex row wrapper */
-  .form-row {
+.form-row {
     display: flex;
+    width: 100%;
+    clear: both;
     flex-wrap: wrap;
-    gap: var(--gap-size);
-    margin-bottom: var(--row-spacing);
-    align-items: flex-start;
   }
   
-  /* Base column style */
-  .form-col {
-    flex: 1 1 var(--min-col-width);
-    min-width: 0;
+  .form-col-3 { width: 3%; }
+  .form-col-10 { width: 10%; }
+  .form-col-13 { width: 13%; }
+  .form-col-18 { width: 18%; }
+  .form-col-19 { width: 19%; }
+  .form-col-20 { width: 20%; }
+  .form-col-23 { width: 23%; }
+  .form-col-25 { width: 25%; }
+  
+  .txtFont {
+    /* Add your original font styles here */
   }
-  
-  /* Percentage-based column widths */
-  .form-col-3 { flex-basis: calc(3% - var(--gap-size)); }
-  .form-col-10 { flex-basis: calc(10% - var(--gap-size)); }
-  .form-col-13 { flex-basis: calc(13% - var(--gap-size)); }
-  .form-col-18 { flex-basis: calc(18% - var(--gap-size)); }
-  .form-col-19 { flex-basis: calc(19% - var(--gap-size)); }
-  .form-col-20 { flex-basis: calc(20% - var(--gap-size)); }
-  .form-col-23 { flex-basis: calc(23% - var(--gap-size)); }
-  .form-col-25 { flex-basis: calc(25% - var(--gap-size)); }
-  
-  /* Form elements styling */
-  .form-row label {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-size: 0.875rem; /* 14px */
-    font-weight: 500;
-    line-height: 1.25;
-  }
-  
-  .form-control {
-    width: 100%;
-    height: var(--input-height);
-    padding: 0.375rem 0.75rem;
-    box-sizing: border-box;
-    font-size: 0.875rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-  }
-  
-  /* Input size classes */
-  .txt30 { width: 2rem; } /* ~32px */
-  .txt120 { width: 7.5rem; } /* ~120px */
-  .txt150 { width: 9.375rem; } /* ~150px */
-  .txt180 { width: 11.25rem; } /* ~180px */
-  
-  /* Select elements */
-  .form-row select {
-    width: 100%;
-    max-width: 100%;
-    height: var(--input-height);
-  }
-  
-  /* Error styling */
-  .txtError {
-    color: #d32f2f;
-    font-weight: bold;
-    font-size: 0.75rem;
-  }
-  
-  /* Utility classes */
-  .fleft { float: left; }
-  .ignoreHide { opacity: 1 !important; }
-  .notmandatory { font-weight: normal; }
-  .star { color: #d32f2f; font-size: 0.8em; }
-  
-  /* For the state dropdown */
-  #idIssuedState {
-    width: 4.5rem; /* ~72px */
-    font: normal 0.75rem/1.5 calibri, sans-serif;
+
+  .form-row-inside{
+    display: flex;
   }
