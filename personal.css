@@ -4,6 +4,7 @@ label{ font:13px verdana!important}
     flex-wrap: wrap;
     margin: 0 -0.5rem; /* Negative margin to offset padding */
     column-gap: 2rem;
+    justify-content: space-between;
   }
   
   .form-group {
