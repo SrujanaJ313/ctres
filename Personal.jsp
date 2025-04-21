@@ -237,8 +237,7 @@
 							</div>
 						  </div>
 						  
-						  <div class="form-row">
-							<div class="form-col-13">
+						  <div class="form-group">
 							  <label for="cmtBirthDt"> <span class="star">*</span> 
 								<spring:bind path="cmtBirthDt">
 								  <span class='${status.error ? 'txtError' : ''}'>  
@@ -246,11 +245,8 @@
 								  </span>
 								</spring:bind>
 							  </label>
-							</div>
-							<div class="form-col-18 txtFont" colspan="2">
 							  <form:input id="cmtBirthDt" tabindex="4" path="cmtBirthDt" maxlength="10"
 								class="txt120 form-control fleft ignoreHide" />
-							</div>
 						  </div>
 						  
 						  <div class="form-row">
