@@ -246,7 +246,7 @@
 								</spring:bind>
 							  </label>
 							  <div id="cmtBirthDt">
-								  <form:input tabindex="4" path="cmtBirthDt" maxlength="10"
+								  <form:input id="cmtBirthDt-form-input" tabindex="4" path="cmtBirthDt" maxlength="10"
 									class="txt120 form-control fleft ignoreHide" />
 							  </div>
 						  </div>

@@ -57,8 +57,13 @@ label{ font:13px verdana!important}
   }
 
   #form-group-cmtBirthDt-label{
-    width: 10%;
+    width: 27%;
   }
   #cmtBirthDt{
-    width: 90%;
+      width: 73%;
+    display: flex;
+    justify-self: flex-start;
+  }
+  #cmtBirthDt-form-input{
+    width: 50%;
   }
