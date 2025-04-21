@@ -1,4 +1,4 @@
-label{ font:13px verdana !important}
+label{ font:13px verdana!important}
 .form-row {
     display: flex;
     flex-wrap: wrap;
@@ -44,4 +44,7 @@ label{ font:13px verdana !important}
 
   #cmtFirstName,#cmtLastName,#idType, #idNumber,#idIssuedState{
     width:60%;
+  }
+  .form-col-13{
+    padding-bottom: 5%;
   }
