@@ -1,4 +1,4 @@
-/* Base styles */
+body{ font:13px verdana !important}
 .form-row {
     display: flex;
     flex-wrap: wrap;

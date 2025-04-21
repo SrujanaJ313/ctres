@@ -254,19 +254,18 @@
 						  </div>
 						  
 						  <div class="form-row">
-							<div class="form-col-20">
-							  <label for="idType"> <span class="star">*</span> 
+							<!-- ID Type Field -->
+							<div class="form-group">
+							  <label for="idType">
+								<span class="star">*</span> 
 								<spring:bind path="idType">
 								  <span class='${status.error ? 'txtError' : ''}'>  
 									<fmt:message key="idType"></fmt:message>
 								  </span>
 								</spring:bind>
 							  </label>
-							</div>
-							<div class="form-col-23 txtFont">
-							  <form:select path="idType" 
-								style="width: 160px;" id="idType"
-								value="${pageDTO.idType}" tabindex="311">
+							  <form:select path="idType" id="idType"
+								value="${pageDTO.idType}" tabindex="311" class="form-control">
 								<option value="0"><fmt:message key="selectOne"></fmt:message></option>
 								<c:forEach items="${idTypeList}" var="row">
 								  <option value="${row.alvId}"
@@ -283,7 +282,9 @@
 								</c:forEach>
 							  </form:select>
 							</div>
-							<div class="form-col-10">
+						  
+							<!-- ID Number Field -->
+							<div class="form-group">
 							  <label for="idNumber" class="notmandatory"> 
 								<spring:bind path="idNumber">
 								  <span class='${status.error ? 'txtError' : ''}'>  
@@ -291,28 +292,27 @@
 								  </span>
 								</spring:bind> 
 							  </label>
-							</div>
-							<div class="form-col-10 txtFont">
 							  <form:input tabindex="3" id="idNumber" path="idNumber"
 								value="${pageDTO.idNumber}" maxlength="16"
-								class="txt120 form-control" />
+								class="form-control" />
 							</div>
-							<div class="form-col-18">
-							  <label for="idIssuedState">&nbsp; 
+						  
+							<!-- Issued State Field -->
+							<div class="form-group">
+							  <label for="idIssuedState">
 								<fmt:message key="issuedState"></fmt:message>
 							  </label>
-							</div>
-							<div class="form-col-19 txtFont">
-							  <form:select path="idIssuedState" style="font:normal 12px calibri; width:62px;" id="idIssuedState"
-								value="${pageDTO.idIssuedState}" tabindex="311">
+							  <form:select path="idIssuedState" id="idIssuedState"
+								value="${pageDTO.idIssuedState}" tabindex="311" class="form-control state-select">
 								<option value="">--</option>  
 								<c:forEach items="${usStateCodes}" var="row">
-								  <option value ="${row.label}" <c:if test="${pageDTO.idIssuedState == row.label}">selected = "selected"</c:if>>
-								  <c:out value="${row.label}"></c:out></option>
+								  <option value="${row.label}" <c:if test="${pageDTO.idIssuedState == row.label}">selected = "selected"</c:if>>
+									<c:out value="${row.label}"></c:out>
+								  </option>
 								</c:forEach> 
 							  </form:select>
 							</div>
-						  </div>`
+						  </div>
 					</div>
 				</fieldset>
 
