@@ -196,57 +196,44 @@
 							</tr>
 						</table> -->
 						<div class="form-row">
-							<div class="form-row-inside">
-								<div class="form-col-20">
-								  <label for="cmtFirstName">
-									<span class="star">*</span> 
-									<spring:bind path="cmtFirstName">
-									  <span class='${status.error ? 'txtError' : ''}'>  
-										<fmt:message key="firstName"></fmt:message>
-									  </span>
-									</spring:bind>
-								  </label>
-								</div>
-								<div class="form-col-20 txtFont">
-								  <form:input tabindex="1" id="cmtFirstName" path="cmtFirstName"
-									value="${pageDTO.cmtFirstName}" maxlength="25"
-									class="txt180 form-control ignoreHide" />
-								</div>
+							<div class="form-group">
+							  <label for="cmtFirstName">
+								<span class="star">*</span> 
+								<spring:bind path="cmtFirstName">
+								  <span class='${status.error ? 'txtError' : ''}'>  
+									<fmt:message key="firstName"></fmt:message>
+								  </span>
+								</spring:bind>
+							  </label>
+							  <form:input tabindex="1" id="cmtFirstName" path="cmtFirstName"
+								value="${pageDTO.cmtFirstName}" maxlength="25"
+								class="form-control" />
 							</div>
-
-							<div class="form-row-inside">
-								<div class="form-col-20">
-								  <label for="cmtMiddleInitial" class="notmandatory"> 
-									<spring:bind path="cmtMiddleInitial">
-									  <span class='${status.error ? 'txtError' : ''}'>  
-										<fmt:message key="middleInitial"></fmt:message>
-									  </span>
-									</spring:bind> 
-								  </label>
-								</div>
-								<div class="form-col-3 txtFont" style="white-space: nowrap;">
-								  <form:input tabindex="2" id="cmtMiddleInitial" path="cmtMiddleInitial"
-									value="${pageDTO.cmtMiddleInitial}" maxlength="1"
-									class="txt30 form-control ignoreHide" />
-								</div>
+						  
+							<div class="form-group">
+							  <label for="cmtMiddleInitial" class="notmandatory"> 
+								<spring:bind path="cmtMiddleInitial">
+								  <span class='${status.error ? 'txtError' : ''}'>  
+									<fmt:message key="middleInitial"></fmt:message>
+								  </span>
+								</spring:bind> 
+							  </label>
+							  <form:input tabindex="2" id="cmtMiddleInitial" path="cmtMiddleInitial"
+								value="${pageDTO.cmtMiddleInitial}" maxlength="1"
+								class="form-control middle-initial" />
 							</div>
-
-							<div class="form-row-inside">
-								<div class="form-col-13">
-								  <span style="padding-left:8%"></span>
-								  <label for="cmtLastName"><span class="star">*</span> 
-									<spring:bind path="cmtLastName">
-									  <span class='${status.error ? 'txtError' : ''}'>  
-										<fmt:message key="lastName"></fmt:message>
-									  </span>
-									</spring:bind> 
-								  </label>
-								</div>
-								<div class="form-col-25 txtFont">
-								  <form:input tabindex="3" id="cmtLastName" path="cmtLastName"
-									value="${pageDTO.cmtLastName}" maxlength="25"
-									class="txt150 form-control ignoreHide" />
-								</div>
+						  
+							<div class="form-group">
+							  <label for="cmtLastName"><span class="star">*</span> 
+								<spring:bind path="cmtLastName">
+								  <span class='${status.error ? 'txtError' : ''}'>  
+									<fmt:message key="lastName"></fmt:message>
+								  </span>
+								</spring:bind> 
+							  </label>
+							  <form:input tabindex="3" id="cmtLastName" path="cmtLastName"
+								value="${pageDTO.cmtLastName}" maxlength="25"
+								class="form-control" />
 							</div>
 						  </div>
 						  

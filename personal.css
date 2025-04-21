@@ -1,23 +1,42 @@
+/* Base styles */
 .form-row {
     display: flex;
-    width: 100%;
-    clear: both;
     flex-wrap: wrap;
+    margin: 0 -0.5rem; /* Negative margin to offset padding */
   }
   
-  .form-col-3 { width: 3%; }
-  .form-col-10 { width: 10%; }
-  .form-col-13 { width: 13%; }
-  .form-col-18 { width: 18%; }
-  .form-col-19 { width: 19%; }
-  .form-col-20 { width: 20%; }
-  .form-col-23 { width: 23%; }
-  .form-col-25 { width: 25%; }
+  .form-group {
+    flex: 1 0 auto;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+    min-width: 150px; /* Minimum width before stacking */
+    box-sizing: border-box;
+  }
   
-  .txtFont {
-    /* Add your original font styles here */
+  .form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
   }
-
-  .form-row-inside{
-    display: flex;
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
   }
+  
+  /* Specific field styles */
+  .middle-initial {
+    max-width: 2.5rem;
+    text-align: center;
+  }
+  
+  /* Existing utility classes */
+  .txtError { color: #d32f2f; }
+  .notmandatory { font-weight: normal; }
+  .star { color: red; }
+  .ignoreHide { opacity: 1 !important; }
