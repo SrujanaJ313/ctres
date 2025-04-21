@@ -1,0 +1,89 @@
+.form-address {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    flex: 1 1 auto;
+    min-width: 200px;
+  }
+  
+  .address-line-group {
+    flex-grow: 2;
+  }
+  
+  .po-box-group {
+    flex-basis: 200px;
+  }
+  
+  .location-group {
+    flex-grow: 2;
+  }
+  
+  .location-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .country-field, .state-field {
+    flex: 1 1 auto;
+    min-width: 150px;
+  }
+  
+  .city-group {
+    flex-grow: 1;
+  }
+  
+  .zip-group {
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .zip-fields {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .zip-part1 {
+    width: 5rem;
+  }
+  
+  .zip-part2 {
+    width: 4rem;
+  }
+  
+  .postal-field {
+    flex: 1 1 auto;
+    min-width: 8rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+  }
+  
+  .empty-label {
+    display: block;
+    height: 1.25rem;
+  }
+  
+  /* Existing utility classes */
+  .txtError { color: #d32f2f; }
+  .star { color: red; }
+  .hidden { display: none; }
