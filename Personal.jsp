@@ -245,8 +245,10 @@
 								  </span>
 								</spring:bind>
 							  </label>
-							  <form:input id="cmtBirthDt" tabindex="4" path="cmtBirthDt" maxlength="10"
-								class="txt120 form-control fleft ignoreHide" />
+							  <div id="cmtBirthDt">
+								  <form:input tabindex="4" path="cmtBirthDt" maxlength="10"
+									class="txt120 form-control fleft ignoreHide" />
+							  </div>
 						  </div>
 						  
 						  <div class="form-row">
