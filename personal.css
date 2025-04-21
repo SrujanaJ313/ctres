@@ -42,6 +42,6 @@ body{ font:13px verdana !important}
   .star { color: red; }
   .ignoreHide { opacity: 1 !important; }
 
-  #cmtFirstName,#cmtLastName{
+  #cmtFirstName,#cmtLastName,#idType, #idNumber,#idIssuedState{
     width:60%;
   }
