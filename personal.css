@@ -55,3 +55,10 @@ label{ font:13px verdana!important}
     display: flex;
     justify-content: space-between;
   }
+
+  #form-group-cmtBirthDt-label{
+    width: 10%;
+  }
+  #cmtBirthDt{
+    width: 90%;
+  }

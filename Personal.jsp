@@ -238,7 +238,7 @@
 						  </div>
 						  
 						  <div class="form-group-cmtBirthDt">
-							  <label for="cmtBirthDt"> <span class="star">*</span> 
+							  <label for="cmtBirthDt" id="form-group-cmtBirthDt-label"> <span class="star">*</span> 
 								<spring:bind path="cmtBirthDt">
 								  <span class='${status.error ? 'txtError' : ''}'>  
 									<fmt:message key="dob"></fmt:message>
