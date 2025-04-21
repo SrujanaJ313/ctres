@@ -237,7 +237,8 @@
 							</div>
 						  </div>
 						  
-						  <div class="form-group">
+						  <div class="form-row">
+							<div class="form-col-13">
 							  <label for="cmtBirthDt"> <span class="star">*</span> 
 								<spring:bind path="cmtBirthDt">
 								  <span class='${status.error ? 'txtError' : ''}'>  
@@ -245,72 +246,73 @@
 								  </span>
 								</spring:bind>
 							  </label>
-
-								  <form:input tabindex="4" path="cmtBirthDt" maxlength="10"
-									class="txt120 form-control fleft ignoreHide" />
-
+							</div>
+							<div class="form-col-18 txtFont" colspan="2">
+							  <form:input id="cmtBirthDt" tabindex="4" path="cmtBirthDt" maxlength="10"
+								class="txt120 form-control fleft ignoreHide" />
+							</div>
 						  </div>
 						  
 						  <div class="form-row">
-							<!-- ID Type Field -->
-							<div class="form-group">
-							  <label for="idType">
-								<span class="star">*</span> 
-								<spring:bind path="idType">
-								  <span class='${status.error ? 'txtError' : ''}'>  
-									<fmt:message key="idType"></fmt:message>
-								  </span>
-								</spring:bind>
-							  </label>
-							  <form:select path="idType" id="idType"
-								value="${pageDTO.idType}" tabindex="311" class="form-control">
-								<option value="0"><fmt:message key="selectOne"></fmt:message></option>
-								<c:forEach items="${idTypeList}" var="row">
-								  <option value="${row.alvId}"
-									<c:if test="${pageDTO.idType == row.alvId}">selected = "selected"</c:if>>
-									<c:choose>
-									  <c:when test="${pageDTO.language == 'es_US'}">
-										<c:out value="${row.alvSpShortDescTxt}"></c:out>
-									  </c:when>
-									  <c:otherwise>
-										<c:out value="${row.alvShortDescTxt}"></c:out>
-									  </c:otherwise>
-									</c:choose>
-								  </option>
-								</c:forEach>
-							  </form:select>
-							</div>
-						  
-							<!-- ID Number Field -->
-							<div class="form-group">
-							  <label for="idNumber" class="notmandatory"> 
-								<spring:bind path="idNumber">
-								  <span class='${status.error ? 'txtError' : ''}'>  
-									<fmt:message key="idNumber"></fmt:message>
-								  </span>
-								</spring:bind> 
-							  </label>
-							  <form:input tabindex="3" id="idNumber" path="idNumber"
-								value="${pageDTO.idNumber}" maxlength="16"
-								class="form-control" />
-							</div>
-						  
-							<!-- Issued State Field -->
-							<div class="form-group">
-							  <label for="idIssuedState">
-								<fmt:message key="issuedState"></fmt:message>
-							  </label>
-							  <form:select path="idIssuedState" id="idIssuedState"
-								value="${pageDTO.idIssuedState}" tabindex="311" class="form-control state-select">
-								<option value="">--</option>  
-								<c:forEach items="${usStateCodes}" var="row">
-								  <option value="${row.label}" <c:if test="${pageDTO.idIssuedState == row.label}">selected = "selected"</c:if>>
-									<c:out value="${row.label}"></c:out>
-								  </option>
-								</c:forEach> 
-							  </form:select>
-							</div>
-						  </div>
+  <!-- ID Type Field -->
+  <div class="form-group">
+    <label for="idType">
+      <span class="star">*</span> 
+      <spring:bind path="idType">
+        <span class='${status.error ? 'txtError' : ''}'>  
+          <fmt:message key="idType"></fmt:message>
+        </span>
+      </spring:bind>
+    </label>
+    <form:select path="idType" id="idType"
+      value="${pageDTO.idType}" tabindex="311" class="form-control">
+      <option value="0"><fmt:message key="selectOne"></fmt:message></option>
+      <c:forEach items="${idTypeList}" var="row">
+        <option value="${row.alvId}"
+          <c:if test="${pageDTO.idType == row.alvId}">selected = "selected"</c:if>>
+          <c:choose>
+            <c:when test="${pageDTO.language == 'es_US'}">
+              <c:out value="${row.alvSpShortDescTxt}"></c:out>
+            </c:when>
+            <c:otherwise>
+              <c:out value="${row.alvShortDescTxt}"></c:out>
+            </c:otherwise>
+          </c:choose>
+        </option>
+      </c:forEach>
+    </form:select>
+  </div>
+
+  <!-- ID Number Field -->
+  <div class="form-group">
+    <label for="idNumber" class="notmandatory"> 
+      <spring:bind path="idNumber">
+        <span class='${status.error ? 'txtError' : ''}'>  
+          <fmt:message key="idNumber"></fmt:message>
+        </span>
+      </spring:bind> 
+    </label>
+    <form:input tabindex="3" id="idNumber" path="idNumber"
+      value="${pageDTO.idNumber}" maxlength="16"
+      class="form-control" />
+  </div>
+
+  <!-- Issued State Field -->
+  <div class="form-group">
+    <label for="idIssuedState">
+      <fmt:message key="issuedState"></fmt:message>
+    </label>
+    <form:select path="idIssuedState" id="idIssuedState"
+      value="${pageDTO.idIssuedState}" tabindex="311" class="form-control state-select">
+      <option value="">--</option>  
+      <c:forEach items="${usStateCodes}" var="row">
+        <option value="${row.label}" <c:if test="${pageDTO.idIssuedState == row.label}">selected = "selected"</c:if>>
+          <c:out value="${row.label}"></c:out>
+        </option>
+      </c:forEach> 
+    </form:select>
+  </div>
+</div>
 					</div>
 				</fieldset>
 
