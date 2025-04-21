@@ -50,3 +50,6 @@ label{ font:13px verdana!important}
   .form-col-13{
     padding-bottom: 2%;
   }
+  .form-group-cmtBirthDt{
+    width: 35%;
+  }
