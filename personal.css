@@ -50,20 +50,4 @@ label{ font:13px verdana!important}
   .form-col-13{
     padding-bottom: 2%;
   }
-  .form-group-cmtBirthDt{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-  }
 
-  #form-group-cmtBirthDt-label{
-    width: 27%;
-  }
-  #cmtBirthDt{
-      width: 73%;
-    display: flex;
-    justify-self: flex-start;
-  }
-  #cmtBirthDt-form-input{
-    width: 50%;
-  }

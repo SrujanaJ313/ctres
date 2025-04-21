@@ -237,18 +237,18 @@
 							</div>
 						  </div>
 						  
-						  <div class="form-group-cmtBirthDt">
-							  <label for="cmtBirthDt" id="form-group-cmtBirthDt-label"> <span class="star">*</span> 
+						  <div class="form-group">
+							  <label for="cmtBirthDt"> <span class="star">*</span> 
 								<spring:bind path="cmtBirthDt">
 								  <span class='${status.error ? 'txtError' : ''}'>  
 									<fmt:message key="dob"></fmt:message>
 								  </span>
 								</spring:bind>
 							  </label>
-							  <div id="cmtBirthDt">
-								  <form:input id="cmtBirthDt-form-input" tabindex="4" path="cmtBirthDt" maxlength="10"
+
+								  <form:input tabindex="4" path="cmtBirthDt" maxlength="10"
 									class="txt120 form-control fleft ignoreHide" />
-							  </div>
+
 						  </div>
 						  
 						  <div class="form-row">
