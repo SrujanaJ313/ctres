@@ -51,5 +51,7 @@ label{ font:13px verdana!important}
     padding-bottom: 2%;
   }
   .form-group-cmtBirthDt{
-    width: 35%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
   }
