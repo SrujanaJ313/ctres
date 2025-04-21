@@ -22,7 +22,7 @@
 		
 	   
 	    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles/cmtPersonalInfo.css?3"/> 
-	<script type="text/javascript" src="${pageContext.request.contextPath}/scripts/cmtPersonalInfo.js?3"></script> <!-- SV198529 -->
+	<script type="text/javascript" src="${pageContext.request.contextPath}/scripts/cmtPersonalInfo.js?3"></script> 
 	<script src="${pageContext.request.contextPath}/scripts/jquery-ui.js"></script>
 	<script>
 		var alertBlock = function() {
@@ -71,7 +71,7 @@
 				<fieldset class="scheduler-border" style="margin: 0 0 0.5em 0 !important;">
 					<legend class="scheduler-border" style="margin: 0 0 0.5em 0 !important;"><fmt:message key="personalInformation"></fmt:message></legend>
 					<div class="control-group" id="cmtPersonalInfo">
-						<table style="width: 100%;">
+						<!-- <table style="width: 100%;">
 							<tr>
 								<td width="20%">
 									<label for="cmtFirstName"> <span class="star">*</span> 
@@ -85,7 +85,7 @@
 								<td width="20%" class="txtFont">
 									<form:input tabindex="1" id="cmtFirstName" path="cmtFirstName"
 										value="${pageDTO.cmtFirstName}" maxlength="25"
-										class="txt180 form-control ignoreHide" />	<!-- SV198529 -->
+										class="txt180 form-control ignoreHide" />	
 								</td>
 								<td width="20%">
 									<label for="cmtMiddleInitial" class="notmandatory"> 
@@ -99,7 +99,7 @@
 								<td width="3%" class="txtFont" nowrap>
 									<form:input tabindex="2" id="cmtMiddleInitial" path="cmtMiddleInitial"
 										value="${pageDTO.cmtMiddleInitial}" maxlength="1"
-										class="txt30 form-control ignoreHide" />	<!-- SV198529 -->
+										class="txt30 form-control ignoreHide" />	
 								</td>
 								<td width="13%">
 									<span style="padding-left:8%"></span>
@@ -114,7 +114,7 @@
 								<td width="25%" class="txtFont">
 									<form:input tabindex="3" id="cmtLastName" path="cmtLastName"
 										value="${pageDTO.cmtLastName}" maxlength="25"
-										class="txt150 form-control ignoreHide" />	<!-- SV198529 -->
+										class="txt150 form-control ignoreHide" />	
 								</td>
 							</tr>
 
@@ -130,7 +130,7 @@
 								</td>
 								<td width="18%" class="txtFont" colspan="2">
 									<form:input id="cmtBirthDt" tabindex="4" path="cmtBirthDt" maxlength="10"
-										class="txt120 form-control fleft ignoreHide" />	<!-- SV198529 -->
+										class="txt120 form-control fleft ignoreHide" />	
 								</td>
 							</tr>
 							<tr>
@@ -177,12 +177,12 @@
 										value="${pageDTO.idNumber}" maxlength="16"
 										class="txt120 form-control" />
 								</td>
-								<td width="18%"> <!-- SV195823 -->
+								<td width="18%"> 
 									<label for="idIssuedState">&nbsp; 
 										<fmt:message key="issuedState"></fmt:message>
 									</label>
 								</td>
-								<td width="19%" class="txtFont" > <!-- SV195823 -->
+								<td width="19%" class="txtFont" > 
 									<form:select path="idIssuedState" style="font:normal 12px calibri; width:62px;"  id="idIssuedState"
 										value="${pageDTO.idIssuedState}" tabindex="311">
 									
@@ -194,7 +194,130 @@
 									</form:select>
 								</td>
 							</tr>
-						</table>
+						</table> -->
+						<div class="form-row">
+							<div class="form-col-20">
+							  <label for="cmtFirstName">
+								<span class="star">*</span> 
+								<spring:bind path="cmtFirstName">
+								  <span class='${status.error ? 'txtError' : ''}'>  
+									<fmt:message key="firstName"></fmt:message>
+								  </span>
+								</spring:bind>
+							  </label>
+							</div>
+							<div class="form-col-20 txtFont">
+							  <form:input tabindex="1" id="cmtFirstName" path="cmtFirstName"
+								value="${pageDTO.cmtFirstName}" maxlength="25"
+								class="txt180 form-control ignoreHide" />
+							</div>
+							<div class="form-col-20">
+							  <label for="cmtMiddleInitial" class="notmandatory"> 
+								<spring:bind path="cmtMiddleInitial">
+								  <span class='${status.error ? 'txtError' : ''}'>  
+									<fmt:message key="middleInitial"></fmt:message>
+								  </span>
+								</spring:bind> 
+							  </label>
+							</div>
+							<div class="form-col-3 txtFont" style="white-space: nowrap;">
+							  <form:input tabindex="2" id="cmtMiddleInitial" path="cmtMiddleInitial"
+								value="${pageDTO.cmtMiddleInitial}" maxlength="1"
+								class="txt30 form-control ignoreHide" />
+							</div>
+							<div class="form-col-13">
+							  <span style="padding-left:8%"></span>
+							  <label for="cmtLastName"><span class="star">*</span> 
+								<spring:bind path="cmtLastName">
+								  <span class='${status.error ? 'txtError' : ''}'>  
+									<fmt:message key="lastName"></fmt:message>
+								  </span>
+								</spring:bind> 
+							  </label>
+							</div>
+							<div class="form-col-25 txtFont">
+							  <form:input tabindex="3" id="cmtLastName" path="cmtLastName"
+								value="${pageDTO.cmtLastName}" maxlength="25"
+								class="txt150 form-control ignoreHide" />
+							</div>
+						  </div>
+						  
+						  <div class="form-row">
+							<div class="form-col-13">
+							  <label for="cmtBirthDt"> <span class="star">*</span> 
+								<spring:bind path="cmtBirthDt">
+								  <span class='${status.error ? 'txtError' : ''}'>  
+									<fmt:message key="dob"></fmt:message>
+								  </span>
+								</spring:bind>
+							  </label>
+							</div>
+							<div class="form-col-18 txtFont" colspan="2">
+							  <form:input id="cmtBirthDt" tabindex="4" path="cmtBirthDt" maxlength="10"
+								class="txt120 form-control fleft ignoreHide" />
+							</div>
+						  </div>
+						  
+						  <div class="form-row">
+							<div class="form-col-20">
+							  <label for="idType"> <span class="star">*</span> 
+								<spring:bind path="idType">
+								  <span class='${status.error ? 'txtError' : ''}'>  
+									<fmt:message key="idType"></fmt:message>
+								  </span>
+								</spring:bind>
+							  </label>
+							</div>
+							<div class="form-col-23 txtFont">
+							  <form:select path="idType" 
+								style="width: 160px;" id="idType"
+								value="${pageDTO.idType}" tabindex="311">
+								<option value="0"><fmt:message key="selectOne"></fmt:message></option>
+								<c:forEach items="${idTypeList}" var="row">
+								  <option value="${row.alvId}"
+									<c:if test="${pageDTO.idType == row.alvId}">selected = "selected"</c:if>>
+									<c:choose>
+									  <c:when test="${pageDTO.language == 'es_US'}">
+										<c:out value="${row.alvSpShortDescTxt}"></c:out>
+									  </c:when>
+									  <c:otherwise>
+										<c:out value="${row.alvShortDescTxt}"></c:out>
+									  </c:otherwise>
+									</c:choose>
+								  </option>
+								</c:forEach>
+							  </form:select>
+							</div>
+							<div class="form-col-10">
+							  <label for="idNumber" class="notmandatory"> 
+								<spring:bind path="idNumber">
+								  <span class='${status.error ? 'txtError' : ''}'>  
+									<fmt:message key="idNumber"></fmt:message>
+								  </span>
+								</spring:bind> 
+							  </label>
+							</div>
+							<div class="form-col-10 txtFont">
+							  <form:input tabindex="3" id="idNumber" path="idNumber"
+								value="${pageDTO.idNumber}" maxlength="16"
+								class="txt120 form-control" />
+							</div>
+							<div class="form-col-18">
+							  <label for="idIssuedState">&nbsp; 
+								<fmt:message key="issuedState"></fmt:message>
+							  </label>
+							</div>
+							<div class="form-col-19 txtFont">
+							  <form:select path="idIssuedState" style="font:normal 12px calibri; width:62px;" id="idIssuedState"
+								value="${pageDTO.idIssuedState}" tabindex="311">
+								<option value="">--</option>  
+								<c:forEach items="${usStateCodes}" var="row">
+								  <option value ="${row.label}" <c:if test="${pageDTO.idIssuedState == row.label}">selected = "selected"</c:if>>
+								  <c:out value="${row.label}"></c:out></option>
+								</c:forEach> 
+							  </form:select>
+							</div>
+						  </div>
 					</div>
 				</fieldset>
 
