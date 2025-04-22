@@ -1,31 +1,17 @@
-.form-address {
-    width: 100%;
-    max-width: 1200px;
-    /* margin: 0 auto; */
-  }
-  
-  .form-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    gap: 1rem;
-  }
-  
-  .form-group {
-    flex: 1 1 auto;
-    display: flex;
-    min-width: 200px;
-  }
-  
-  .address-line-group {
-    /* flex-grow: 2; */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .po-box-group {
-    flex-basis: 200px;
-  }
+.common-address-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Optional spacing between the columns */
+  margin-bottom: 1.5rem;
+}
+
+.common-address-form-group,
+.common-address-po-box-group {
+  flex: 1 1 48%; /* Take approx 50% width, allows wrapping */
+  min-width: 250px; /* Prevents cramping on smaller screens */
+  box-sizing: border-box;
+}
+
   
   .location-group {
     flex-grow: 2;

@@ -191,7 +191,7 @@
 		  </div>
 		</div>
 	  
-		<div class="common-address-form-group common-address-po-box-group">
+		<div class="common-address-po-box-group">
 		  <label for="poBox">
 			<spring:bind path="addressDTO.poBox">
 			  <span class='${status.error ? "txtError" : ""}'>  
