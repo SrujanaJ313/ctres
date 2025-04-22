@@ -5,7 +5,31 @@
   margin-bottom: 1.5rem;
 }
 
-.common-address-form-group,
+.common-address-form-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem; /* space between label and input group */
+  flex: 1 1 48%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.common-address-form-group > label {
+  flex: 0 0 150px; /* fixed width for the label */
+  margin-top: 0.5rem;
+}
+
+.common-address-address-line-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 0.5rem; /* space between the two inputs */
+}
+
+.common-address-address-line-input {
+  width: 100%;
+}
+
 .common-address-po-box-group {
   flex: 1 1 48%; /* Take approx 50% width, allows wrapping */
   min-width: 250px; /* Prevents cramping on smaller screens */
