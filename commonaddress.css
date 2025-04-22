@@ -13,11 +13,14 @@
   
   .form-group {
     flex: 1 1 auto;
+    display: flex;
     min-width: 200px;
   }
   
   .address-line-group {
-    flex-grow: 2;
+    /* flex-grow: 2; */
+    display: flex;
+    flex-direction: column;
   }
   
   .po-box-group {

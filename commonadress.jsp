@@ -168,7 +168,7 @@
 <div class="form-address">
 	<!-- Address Line 1 + PO Box Row -->
 	<div class="form-row">
-	  <div class="form-group address-line-group">
+	  <div class="form-group">
 		<label for="addressLine1">
 		  <span class="star">*</span> 
 		  <spring:bind path="addressDTO.addressLine1">
@@ -177,6 +177,7 @@
 			</span>
 		  </spring:bind>
 		</label>
+		<div class="address-line-group">
 		<form:input tabindex="${regularTabIndex}" id="addressLine1" path="addressDTO.addressLine1" 
 		  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine1}" 
 		  class="form-control address-line-input"/>
@@ -184,6 +185,7 @@
 		<form:input tabindex="${regularTabIndex+10}" id="addressLine2" path="addressDTO.addressLine2" 
 		  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine2}" 
 		  class="form-control address-line-input"/>
+		</div>
 	  </div>
   
 	  <div class="form-group po-box-group">
