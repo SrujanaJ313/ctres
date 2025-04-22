@@ -167,40 +167,45 @@
 </table> -->
 <div class="form-address">
 	<!-- Address Line 1 + PO Box Row -->
-	<div class="form-row">
-	  <div class="form-group">
-		<label for="addressLine1">
-		  <span class="star">*</span> 
-		  <spring:bind path="addressDTO.addressLine1">
-			<span class='${status.error ? 'txtError' : ''}'>  
-			  <fmt:message key="addressLine1"></fmt:message>
-			</span>
-		  </spring:bind>
-		</label>
-		<div class="address-line-group">
-		<form:input tabindex="${regularTabIndex}" id="addressLine1" path="addressDTO.addressLine1" 
-		  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine1}" 
-		  class="form-control address-line-input"/>
-		<label for="addressLine2" class="empty-label"></label>
-		<form:input tabindex="${regularTabIndex+10}" id="addressLine2" path="addressDTO.addressLine2" 
-		  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine2}" 
-		  class="form-control address-line-input"/>
-		</div>
-	  </div>
+	<div class="common-address-form-row">
   
-	  <div class="form-group po-box-group">
-		<label for="poBox">
-		  <spring:bind path="addressDTO.poBox">
-			<span class='${status.error ? 'txtError' : ''}'>  
-			  <fmt:message key="poBox"></fmt:message>
-			</span>
-		  </spring:bind>
-		</label>
-		<form:input tabindex="${regularTabIndex+5}" id="poBox" path="addressDTO.poBox" 
-		  maxlength="20" type="text" value="${pageDTO.addressDTO.poBox}" 
-		  class="form-control po-box-input" />
+		<div class="common-address-form-group">
+		  <label for="addressLine1">
+			<span class="star">*</span> 
+			<spring:bind path="addressDTO.addressLine1">
+			  <span class='${status.error ? "txtError" : ""}'>  
+				<fmt:message key="addressLine1"></fmt:message>
+			  </span>
+			</spring:bind>
+		  </label>
+		  <div class="common-address-address-line-group">
+			<form:input tabindex="${regularTabIndex}" id="addressLine1" path="addressDTO.addressLine1" 
+			  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine1}" 
+			  class="form-control common-address-address-line-input"/>
+	  
+			<label for="addressLine2" class="common-address-empty-label"></label>
+	  
+			<form:input tabindex="${regularTabIndex+10}" id="addressLine2" path="addressDTO.addressLine2" 
+			  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine2}" 
+			  class="form-control common-address-address-line-input"/>
+		  </div>
+		</div>
+	  
+		<div class="common-address-form-group common-address-po-box-group">
+		  <label for="poBox">
+			<spring:bind path="addressDTO.poBox">
+			  <span class='${status.error ? "txtError" : ""}'>  
+				<fmt:message key="poBox"></fmt:message>
+			  </span>
+			</spring:bind>
+		  </label>
+		  <form:input tabindex="${regularTabIndex+5}" id="poBox" path="addressDTO.poBox" 
+			maxlength="20" type="text" value="${pageDTO.addressDTO.poBox}" 
+			class="form-control common-address-po-box-input" />
+		</div>
+	  
 	  </div>
-	</div>
+	  
   
 	<!-- Address Line 2 + Country/State Row -->
 	<div class="form-row">
