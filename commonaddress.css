@@ -30,6 +30,11 @@
   width: 100%;
 }
 
+.common-address-po-box-group > label{
+  flex: 0 0 150px; /* fixed width for the label */
+  margin-top: 0.5rem;
+}
+
 .common-address-po-box-group {
   flex: 1 1 48%; /* Take approx 50% width, allows wrapping */
   min-width: 250px; /* Prevents cramping on smaller screens */
