@@ -4,6 +4,7 @@
      <meta name="_csrf" content="${_csrf.token}"/>
    	 <!-- default header name is X-CSRF-TOKEN -->
    	<meta name="_csrf_header" content="${_csrf.headerName}"/>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles/commonAddress.css?3"/> 
 </head>
 <!-- <table>
 	<tr>
@@ -179,6 +180,10 @@
 		<form:input tabindex="${regularTabIndex}" id="addressLine1" path="addressDTO.addressLine1" 
 		  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine1}" 
 		  class="form-control address-line-input"/>
+		<label for="addressLine2" class="empty-label"></label>
+		<form:input tabindex="${regularTabIndex+10}" id="addressLine2" path="addressDTO.addressLine2" 
+		  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine2}" 
+		  class="form-control address-line-input"/>
 	  </div>
   
 	  <div class="form-group po-box-group">
@@ -197,13 +202,6 @@
   
 	<!-- Address Line 2 + Country/State Row -->
 	<div class="form-row">
-	  <div class="form-group address-line-group">
-		<label for="addressLine2" class="empty-label"></label>
-		<form:input tabindex="${regularTabIndex+10}" id="addressLine2" path="addressDTO.addressLine2" 
-		  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine2}" 
-		  class="form-control address-line-input"/>
-	  </div>
-  
 	  <c:if test="${displayaddrline3 eq 'false'}">
 		<div class="form-group location-group">
 		  <div class="location-fields">
