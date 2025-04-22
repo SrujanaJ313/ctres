@@ -197,7 +197,7 @@
 						</table> -->
 						<div class="form-row">
 							<div class="form-group">
-							  <div>
+
 								  <label for="cmtFirstName">
 									<span class="star">*</span> 
 									<spring:bind path="cmtFirstName">
@@ -206,12 +206,11 @@
 									  </span>
 									</spring:bind>
 								  </label>
-							  </div>
-							  <div>
+	
 								  <form:input tabindex="1" id="cmtFirstName" path="cmtFirstName"
 									value="${pageDTO.cmtFirstName}" maxlength="25"
 									class="form-control" />
-							  </div>
+			
 							</div>
 						  
 							<div class="form-group">
