@@ -6,12 +6,12 @@ label{ font:13px verdana!important}
     column-gap: 2rem;
   }
   
-  .form-group {
+  /* .form-group {
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     padding: 0 0.5rem;
     margin-bottom: 1rem;
-    min-width: 150px; /* Minimum width before stacking */
+    min-width: 150px;
     box-sizing: border-box;
     justify-content: space-between;
   }
@@ -30,6 +30,25 @@ label{ font:13px verdana!important}
     border: 1px solid #ccc;
     border-radius: 0.25rem;
     box-sizing: border-box;
+  } */
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    gap: 0.5rem; /* optional spacing between label and input when stacked */
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    flex: 1 1 30%;
+    min-width: 100px;
+  }
+  
+  .form-group input {
+    flex: 1 1 65%;
+    min-width: 150px;
   }
   
   /* Specific field styles */
