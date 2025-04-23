@@ -45,3 +45,80 @@ label{ font:13px verdana!important}
     padding-bottom: 2%;
   
   }
+
+  /* Radio and Checkbox Groups */
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+.radio-option, .checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+/* Specific Sections */
+.gender-group .radio-group {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.race-row {
+  align-items: flex-start;
+}
+
+.race-label {
+  flex: 0 0 120px;
+}
+
+.race-options {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.race-option-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.education-group, .occupation-group {
+  width: 100%;
+}
+
+.language-group .radio-group {
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.language-select {
+  flex: 1;
+  min-width: 200px;
+}
+
+.language-skills-group .checkbox-group {
+  gap: 1.5rem;
+}
+
+.graduation-inputs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.alien-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.alien-number, .alien-expiration {
+  flex: 1;
+  min-width: 200px;
+}
