@@ -170,14 +170,16 @@
 	<div class="common-address-form-row">
   
 		<div class="common-address-form-group">
-		  <label for="addressLine1">
-			<span class="star">*</span> 
-			<spring:bind path="addressDTO.addressLine1">
-			  <span class='${status.error ? "txtError" : ""}'>  
-				<fmt:message key="addressLine1"></fmt:message>
-			  </span>
-			</spring:bind>
-		  </label>
+		  <div>
+			  <label for="addressLine1">
+				<span class="star">*</span> 
+				<spring:bind path="addressDTO.addressLine1">
+				  <span class='${status.error ? "txtError" : ""}'>  
+					<fmt:message key="addressLine1"></fmt:message>
+				  </span>
+				</spring:bind>
+			  </label>
+		  </div>
 		  <div class="common-address-address-line-group">
 			<form:input tabindex="${regularTabIndex}" id="addressLine1" path="addressDTO.addressLine1" 
 			  maxlength="40" type="text" value="${pageDTO.addressDTO.addressLine1}" 
@@ -210,7 +212,7 @@
 	<!-- Address Line 2 + Country/State Row -->
 	<div class="form-row">
 	  <c:if test="${displayaddrline3 eq 'false'}">
-		<div class="form-group location-group">
+
 		  <div class="location-fields">
 			<div class="country-field">
 			  <label for="country">
@@ -223,7 +225,7 @@
 			  </label>
 			  <select tabindex="${regularTabIndex+20}" name="addressDTO.country" id="country" 
 				value="${pageDTO.addressDTO.country}" onchange="populateState('#country','#state',true);"
-				class="form-control country-select">
+				class="country-select">
 				<c:forEach items="${countryCodes}" var="row">
 				  <option value="${row.label}" <c:if test="${pageDTO.addressDTO.country == row.label}">selected = "selected"</c:if>>
 					<c:out value="${row.value}"></c:out>
@@ -242,7 +244,7 @@
 				</spring:bind>
 			  </label>
 			  <select tabindex="${regularTabIndex+30}" name="addressDTO.state" id="state" 
-				value="${pageDTO.addressDTO.state}" class="form-control state-select">
+				value="${pageDTO.addressDTO.state}" class="state-select">
 				<option value="">--</option>  
 				<c:forEach items="${stateCodes}" var="row">
 				  <option value="${row.label}" <c:if test="${pageDTO.addressDTO.state == row.label}">selected = "selected"</c:if>>
@@ -252,7 +254,6 @@
 			  </select>
 			</div>
 		  </div>
-		</div>
 	  </c:if>
 	</div>
   
