@@ -62,11 +62,7 @@ label{ font:13px verdana!important}
   white-space: nowrap;
 }
 
-/* Specific Sections */
-.gender-group .radio-group {
-  flex-direction: column;
-  gap: 0.5rem;
-}
+
 
 .race-row {
   align-items: flex-start;
@@ -122,3 +118,21 @@ label{ font:13px verdana!important}
   flex: 1;
   min-width: 200px;
 }
+
+
+.demographics-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.demographics-form-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Specific Sections */
+/* .gender-group .radio-group {
+  flex-direction: column;
+  gap: 0.5rem;
+} */

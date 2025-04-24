@@ -356,10 +356,10 @@
 						<span class="scheduler-border"><fmt:message key="demographics"/></span>
 					</legend>
 					
-					<div class="control-group" id="demographicsInfo">
+					<div class="demographics-group" id="demographicsInfo">
 						<!-- Gender and Ethnicity -->
-						<div class="form-row">
-							<div class="form-group gender-group">
+						<div class="demographics-form-row">
+							<div class="gender-group">
 								<label for="gender"><span class="star">*</span>
 									<spring:bind path="cmtGender">
 										<span class='${status.error ? "txtError" : ""}'>  
@@ -383,7 +383,7 @@
 								</div>
 							</div>
 				
-							<div class="form-group ethnicity-group">
+							<div class="ethnicity-group">
 								<label for="cmtEthnicity">&nbsp;<span class="star">*</span>&nbsp;
 									<spring:bind path="cmtEthnicity">
 										<span class='${status.error ? "txtError" : ""}'>  
