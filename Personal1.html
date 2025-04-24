@@ -1,0 +1,1047 @@
+<html lang="en"><head>
+
+     <title>NH :Personal Information</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+   <!--  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/claimant/styles/normalize.css">
+	 <link rel="stylesheet" href="/claimant/styles/bootstrap.min.css">
+     <!-- <link rel="stylesheet" type="text/css" href="./claimant/styles/nhes.css?"> -->
+     <link rel="stylesheet" type="text/css" href="/claimant/styles/jquery-ui.css">
+     <link rel="stylesheet" type="text/css" href="/claimant/styles/jquery.timepicker.css">
+	 
+     
+     
+    <!-- <link rel="icon" href="/claimant/claimant/images/favicon.ico"/> -->
+    
+     <!-- jQuery (necessary for Bootstrap js plugins) -->
+	 <script src="/claimant/scripts/jquery.min.js"></script>
+     <script type="text/javascript" src="/claimant/scripts/main.js"></script>
+     <script src="/claimant/scripts/jquery-ui.js"></script>
+  	  	 
+  	 <script type="text/javascript" src="/claimant/scripts/jquery.timepicker.js"></script>
+  	 
+  	 <link rel="stylesheet" href="/claimant/styles/buttons.css" type="text/css">
+  	 <link rel="stylesheet" type="text/css" href="/claimant/styles/ui.jqgrid.css">
+  	 <script type="text/javascript" src="/claimant/scripts/multiselect.js"></script>
+  	 <script type="text/javascript" src="/claimant/scripts/multiselect.min.js"></script>
+   	 <script type="text/javascript" src="/claimant/scripts/common.js?2"></script>
+   	 
+  	 <script type="text/javascript" src="/claimant/scripts/jquery.ui.widget.js"></script>
+	 <script type="text/javascript" src="/claimant/scripts/jquery-picklist.js"></script>
+     <script type="text/javascript" src="/claimant/scripts/numericInput.min.js"></script>     
+     <script type="text/javascript" src="/claimant/scripts/jquery.autotab.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="/claimant/styles/bootstrap-glyphicons.css"> 
+      <link rel="stylesheet" type="text/css" href="/claimant/styles/cmtPersonalInfo.css"> 
+     <script type="text/javascript" src="/claimant/scripts/verifysession.js?7"></script>
+     <meta charset="utf-8">
+	<meta name="_csrf" content="7bc8f825-01c3-4c5a-bf7a-c6bf71385e08">
+   	<meta name="_csrf_header" content="X-CSRF-TOKEN">
+	
+	   <link rel="stylesheet" type="text/css" href="/styles/cmtPersonalInfo.css"> 
+	   <link rel="stylesheet" type="text/css" href="./test.css">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="/claimant/scripts/cmtPersonalInfo.js?3"></script> <!-- SV198529 -->
+	<script src="/claimant/scripts/jquery-ui.js"></script>
+	<script>
+		var alertBlock = function() {
+			//alertbox
+			    	 
+			};
+	</script>
+
+     <meta name="_csrf" content="7bc8f825-01c3-4c5a-bf7a-c6bf71385e08">
+   	 <!-- default header name is X-CSRF-TOKEN -->
+   	<meta name="_csrf_header" content="X-CSRF-TOKEN">
+
+     <meta name="_csrf" content="7bc8f825-01c3-4c5a-bf7a-c6bf71385e08">
+   	 <!-- default header name is X-CSRF-TOKEN -->
+   	<meta name="_csrf_header" content="X-CSRF-TOKEN"></head>
+<body onload="verifyTab()">
+    <script>
+		function formSubmit() {
+			document.getElementById("logoutForm").submit();
+		}
+	</script>
+	<input type="hidden" id="contextPath" name="contextPath" value="/claimant" autocomplete="off" tabindex="1">
+	<input type="hidden" id="language" name="language" value="en_US" autocomplete="off" tabindex="2">
+    <div id="page-content">
+		 <div id="hdrsep">
+	        <div id="header">
+	          <img id="nhlogo" src="/claimant/images/header.png" width="415" height="52" alt="New Hampshire Employment Security" title="New Hampshire Employment Security">
+	          <div id="headerbtns-right">
+	              
+	            <a href="javascript:formSubmit()"><img id="logoutbtn" src="images/logout2.png" width="59" height="22" hspace="0" vspace="0" border="0" align="top" alt="Logout" title="Logout"></a>&nbsp;
+	          	<input type="hidden" name="tabID" id="tabID" value="0.2775233491428153" autocomplete="off" tabindex="3">
+	          	<a href="/claimant/cmtMainMenu"><img id="homebtn" name="homebtn" src="images/homebtn.png" width="19" height="20" alt="Home" title="Home"></a>&nbsp;
+	          		<form id="logoutForm" name="logoutForm" action="logout" method="post"><div>
+<input type="hidden" name="_csrf" value="7bc8f825-01c3-4c5a-bf7a-c6bf71385e08" autocomplete="off" tabindex="4">
+</div></form></div>
+	        </div>
+     	 </div>
+     	 
+		<!--   Date			 Developer    Defect     Description of change
+	 --------       ----------    -------    ----------------------
+	 03/13/2020      Zafrulla     ZK100329   UD-200127-Asterisk required for Capture of Primary Language 
+     06/21/2021      Zafrulla     ZK132403   UD-200614-Alien Authorization Expiration Date Field Format needs correcting
+     03/14/2022   	 Sathish      SAT170022  UE-220311 - Voc Rehab changes in NHUIS
+     04/07/2022	     Sathish      SAT172822  UA-220407-Unable to Clone PUA Application from UI Application
+     12/28/2022		 Sitaram	  SV195823	 UE-221228-MS Edge Compatibility and Alignment issues
+     02/06/2023		 Sitaram	  SV198529 - UE-230131-Clear out and seek preferences on all IC unless transitional or quarterly
+     07/10/2023  	 Anand   	  AnD209328	UE-230612- Work Search Enhancement Project
+     04/12/2024 	 Sitaram	  SV231333	UE-240228-Login.gov Integration
+-->
+
+
+
+
+	<div id="personalinfo-page-content">
+	
+		<div id="headerbtns-right-new">
+		    <!-- AnD88119 -->
+	
+
+
+<!-- Personal Info -->
+	<a title="personal info" href="#" onclick="validateWindowOpenedForHelp('http://localhost:8081/claimanthelp/HelpProject/SSL/WebHelp2.0/index.htm?#Initial_Claims_Application/Basic_Info/Personal_Information_Basic_Info.htm')">
+			<img id="helpbtn" src="/claimant/images/helpbtn.png" width="18" height="20" alt="Help" title="Help">
+		</a>
+	<!-- CCF -->
+	<!-- CCF -->
+	<!-- CCF -->
+	<!-- CCF -->
+	<!-- AnD88119 -->
+	</div>
+		<!-- Form and data elements -->
+		<div id="pagetitle">
+			Personal Information</div>
+		<div id="hideCmtDetailsInd" style="display: none;">N</div>	<!-- SV198529 -->
+		<div class="formclass">
+			<form id="pageDTO" name="cmtPersonalInfo" action="cmtPersonalInfo" method="post"><div class="control-group">
+					<br>
+					<input type="hidden" name="REQUEST_TOKEN_IDENTIIFER" value="17437784482925223916863287704929" autocomplete="off" tabindex="5">
+<input type="hidden" name="windowName" id="windowName" value="174377828518380712853862370545141743778285183" autocomplete="off" tabindex="6">
+<input type="hidden" name="windowNameToSet" id="windowNameToSet" value="" autocomplete="off" tabindex="7">
+<input type="hidden" name="isStaffUser" id="isStaffUser" value="false" autocomplete="off" tabindex="8">
+<script>
+	if($("#windowNameToSet").val() != '')
+	{
+		window.name = $("#windowNameToSet").val();		
+	}					
+</script>
+<script>
+if(($("#isStaffUser").val() == 'false') && (window.name == '' || (window.name != $("#windowName").val()))) 
+{	
+	var pathArray = window.location.pathname.split( '/' );	
+	var path = pathArray[2]; 
+	if(path != 'login' || path != 'splashLogin') {
+		//window.location.replace = 'login';
+	}
+}
+else if(($("#isStaffUser").val() == 'true') && (window.name == '')) 
+{
+	var pathArray = window.location.pathname.split( '/' );	
+	var path = pathArray[2]; 
+	if(path != 'login' || path != 'splashLogin') {
+		//window.location.replace = 'login';
+	}
+}
+</script>
+
+</div>
+
+				<!-- Personal Information -->
+				<fieldset class="scheduler-border" style="margin: 0 0 0.5em 0 !important;">
+					<legend class="scheduler-border" style="margin: 0 0 0.5em 0 !important;">Personal Information</legend>
+					<div class="control-group" id="cmtPersonalInfo">
+						<table style="width: 100%;">
+							<tbody><tr>
+								<td width="5%">
+									<label for="cmtFirstName"> <span class="star">*</span> 
+										<span class="">  
+												First Name:</span>
+										</label>
+								</td>
+								<td width="20%" class="txtFont">
+									<input id="cmtFirstName" name="cmtFirstName" tabindex="9" value="KAREN" class="txt180 form-control ignoreHide textbox-X-clear" type="text" maxlength="25" autocomplete="off"><!-- SV198529 -->
+								</td>
+								<td width="20%">
+									<label for="cmtMiddleInitial" class="notmandatory"> 
+										<span class="">  
+												Middle Initial:</span>
+										</label>
+								</td>
+								<td width="3%" class="txtFont" nowrap="">
+									<input id="cmtMiddleInitial" name="cmtMiddleInitial" tabindex="10" value="A" class="txt30 form-control ignoreHide textbox-X-clear" type="text" maxlength="1" autocomplete="off"><!-- SV198529 -->
+								</td>
+								<td width="13%">
+									<span style="padding-left:8%"></span>
+									<label for="cmtLastName"><span class="star">*</span> 
+										<span class="">  
+												Last Name:</span>
+										</label>
+								</td>
+								<td width="25%" class="txtFont">
+									<input id="cmtLastName" name="cmtLastName" tabindex="11" value="BLOMQUIST" class="txt150 form-control ignoreHide textbox-X-clear" type="text" maxlength="25" autocomplete="off"><!-- SV198529 -->
+								</td>
+							</tr>
+
+							<tr>
+								<td width="5%">
+									<label for="cmtBirthDt"> <span class="star">*</span> 
+										<span class="">  
+												Date Of Birth:</span>
+										</label>
+								</td>
+								<td width="5%" class="txtFont" colspan="1">
+									<input id="cmtBirthDt" name="cmtBirthDt" tabindex="12" class="txt120 form-control fleft ignoreHide textbox-X-clear" type="text" value="04/18/1971" maxlength="10" autocomplete="off" readonly=""><!-- SV198529 -->
+								</td>
+							</tr>
+							<tr>
+								<td width="20%">
+									<label for="idType"> <span class="star">*</span> 
+										<span class="">  
+												ID Type:</span>
+										</label>
+								</td>
+								<td width="23%" class="txtFont">
+									<select id="idType" name="idType" tabindex="13" style="width: 160px;" value="452" autocomplete="off"><option value="0">Select One</option>
+										<option value="452" selected="selected">
+												Driver's License</option>
+										<option value="453">
+												State ID Card</option>
+										<option value="5355">
+												Other picture ID (Passport, Alien Card)</option>
+										<option value="454">
+												I dont have an ID Card</option>
+										</select></td>
+								<td width="10%">
+									<label for="idNumber" class="notmandatory"> 
+										<span class="">  
+												ID #</span>
+										</label>
+								</td>
+								<td width="10%" class="txtFont">
+									<input id="idNumber" name="idNumber" tabindex="14" value="NHL12281146" class="txt120 form-control textbox-X-clear" type="text" maxlength="16" autocomplete="off"></td>
+								<td width="18%"> <!-- SV195823 -->
+									<label for="idIssuedState">&nbsp; 
+										Issued State:</label>
+								</td>
+								<td width="19%" class="txtFont"> <!-- SV195823 -->
+									<select id="idIssuedState" name="idIssuedState" tabindex="15" style="font:normal 12px calibri; width:62px;" value="NH" autocomplete="off"><option value="">--</option>  
+										<option value="AL">
+									        AL</option>
+									 	<option value="AK">
+									        AK</option>
+									 	<option value="AZ">
+									        AZ</option>
+									 	<option value="AR">
+									        AR</option>
+									 	<option value="CA">
+									        CA</option>
+									 	<option value="CO">
+									        CO</option>
+									 	<option value="CT">
+									        CT</option>
+									 	<option value="DE">
+									        DE</option>
+									 	<option value="DC">
+									        DC</option>
+									 	<option value="FL">
+									        FL</option>
+									 	<option value="GA">
+									        GA</option>
+									 	<option value="HI">
+									        HI</option>
+									 	<option value="ID">
+									        ID</option>
+									 	<option value="IL">
+									        IL</option>
+									 	<option value="IN">
+									        IN</option>
+									 	<option value="IA">
+									        IA</option>
+									 	<option value="KS">
+									        KS</option>
+									 	<option value="KY">
+									        KY</option>
+									 	<option value="LA">
+									        LA</option>
+									 	<option value="ME">
+									        ME</option>
+									 	<option value="MD">
+									        MD</option>
+									 	<option value="MA">
+									        MA</option>
+									 	<option value="MI">
+									        MI</option>
+									 	<option value="MN">
+									        MN</option>
+									 	<option value="MS">
+									        MS</option>
+									 	<option value="MO">
+									        MO</option>
+									 	<option value="MT">
+									        MT</option>
+									 	<option value="NE">
+									        NE</option>
+									 	<option value="NV">
+									        NV</option>
+									 	<option value="NH" selected="selected">
+									        NH</option>
+									 	<option value="NJ">
+									        NJ</option>
+									 	<option value="NM">
+									        NM</option>
+									 	<option value="NY">
+									        NY</option>
+									 	<option value="NC">
+									        NC</option>
+									 	<option value="ND">
+									        ND</option>
+									 	<option value="OH">
+									        OH</option>
+									 	<option value="OK">
+									        OK</option>
+									 	<option value="OR">
+									        OR</option>
+									 	<option value="PA">
+									        PA</option>
+									 	<option value="PR">
+									        PR</option>
+									 	<option value="RI">
+									        RI</option>
+									 	<option value="SC">
+									        SC</option>
+									 	<option value="SD">
+									        SD</option>
+									 	<option value="TN">
+									        TN</option>
+									 	<option value="TX">
+									        TX</option>
+									 	<option value="UT">
+									        UT</option>
+									 	<option value="VT">
+									        VT</option>
+									 	<option value="VI">
+									        VI</option>
+									 	<option value="VA">
+									        VA</option>
+									 	<option value="WA">
+									        WA</option>
+									 	<option value="WV">
+									        WV</option>
+									 	<option value="WI">
+									        WI</option>
+									 	<option value="WY">
+									        WY</option>
+									 	<option value="AS">
+									        AS</option>
+									 	<option value="GU">
+									        GU</option>
+									 	<option value="US Gov">
+									        US Gov</option>
+									 	</select></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</fieldset>
+
+
+				<!-- Residential Address -->
+				<fieldset class="scheduler-border" style="margin: 0 0 0.5em 0 !important;">
+					<legend class="scheduler-border" style="margin: 0 0 0.5em 0 !important;">
+					  Residential Address (No P.O. Boxes for Residential Address)
+					</legend>
+					<div class="control-group" id="personalInfoResidentialAddress">
+					  <div class="form-container">
+				  
+						<!-- Line 1 -->
+						<div class="form-row" style="display: flex; gap: 0.5rem; align-items: center;">
+						  <label for="physicalAddressLine1"><span class="star">*</span> Line 1:</label>
+						  <input class="input-narrow" id="physicalAddressLine1" name="addressDTO.physicalAddressLine1" tabindex="16" type="text" value="692 OLD WALPOLE RD" maxlength="40" autocomplete="off">
+						</div>
+				  
+						<!-- Line 2 + Country + State -->
+						<div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: start;">
+						  <div>
+							<label for="physicalAddressLine2" style="margin-bottom: 0.25rem; display: block;"></label>
+							<input class="input-narrow" id="physicalAddressLine2" name="addressDTO.physicalAddressLine2" tabindex="17" type="text" value="" maxlength="40" autocomplete="off">
+						  </div>
+				  
+						  <div>
+							<label for="physicalCountry" style="margin-bottom: 0.25rem;"><span class="star">*</span> Country:</label>
+							<select class="input-narrow" tabindex="18" name="addressDTO.physicalCountry" id="physicalCountry" onchange="populateState('#physicalCountry','#physicalState',false);" autocomplete="off">
+							  <option value="47" selected>United States</option>
+							  <option value="48">Canada</option>
+							  <option value="49">Mexico</option>
+							  <option value="1818">American Samoa</option>
+							</select>
+						  </div>
+				  
+						  <div>
+							<label for="physicalState" style="margin-bottom: 0.25rem;"><span class="star">*</span> State:</label>
+							<select class="input-narrow" tabindex="19" name="addressDTO.physicalState" id="physicalState" autocomplete="off">
+							  <option value="">--</option>
+							  <option value="NH" selected>NH</option>
+							  <option value="CA">CA</option>
+							  <option value="NY">NY</option>
+							</select>
+						  </div>
+						</div>
+				  
+						<!-- City + ZIP -->
+						<div class="form-row" style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; align-items: center;">
+						  <div style="display: flex; align-items: center; gap: 0.5rem;">
+							<label for="physicalCity"><span class="star">*</span> City:</label>
+							<input class="input-narrow" id="physicalCity" name="addressDTO.physicalCity" tabindex="20" type="text" value="SURRY" maxlength="30" autocomplete="off">
+						  </div>
+						  <div style="display: flex; align-items: center; gap: 0.5rem;">
+							<label for="physicalZipCode1" style="display: flex; align-items: center;">
+							  <span class="star" style="margin-right: 0.2rem;">*</span> ZIP:
+							</label>
+							<input class="input-narrow" id="physicalZipCode1" name="addressDTO.physicalZipCode1" tabindex="21" type="text" value="03431" maxlength="5" autocomplete="off">
+							<span>-</span>
+							<input class="input-narrow" id="physicalZipCode2" name="addressDTO.physicalZipCode2" tabindex="22" type="text" value="" maxlength="4" autocomplete="off">
+						  </div>
+						  
+						</div>
+				  
+					  </div>
+					</div>
+				  </fieldset>
+
+
+				<!-- Mailing address -->
+				<label class="hidden" for="chkCopyPhysicalAddress">Mailing Address is same as Residential Address</label>	
+				<fieldset class="scheduler-border" style="margin: 0 0 0.5em 0 !important;">
+					<legend class="scheduler-border" style="margin: 0 0 0.5em 0 !important;">
+						Mailing Address is same as Residential Address
+					</legend>
+					<div class="control-group" id="personalInfoResidentialAddress">
+					  <div class="form-container">
+				  
+						<!-- Line 1 -->
+						<div class="form-row" style="display: flex; gap: 0.5rem; align-items: center;">
+						  <label for="physicalAddressLine1"><span class="star">*</span> Line 1:</label>
+						  <input class="input-narrow" id="physicalAddressLine1" name="addressDTO.physicalAddressLine1" tabindex="16" type="text" value="692 OLD WALPOLE RD" maxlength="40" autocomplete="off">
+						</div>
+				  
+						<!-- Line 2 + Country + State -->
+						<div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: start;">
+						  <div>
+							<label for="physicalAddressLine2" style="margin-bottom: 0.25rem; display: block;"></label>
+							<input class="input-narrow" id="physicalAddressLine2" name="addressDTO.physicalAddressLine2" tabindex="17" type="text" value="" maxlength="40" autocomplete="off">
+						  </div>
+				  
+						  <div>
+							<label for="physicalCountry" style="margin-bottom: 0.25rem;"><span class="star">*</span> Country:</label>
+							<select class="input-narrow" tabindex="18" name="addressDTO.physicalCountry" id="physicalCountry" onchange="populateState('#physicalCountry','#physicalState',false);" autocomplete="off">
+							  <option value="47" selected>United States</option>
+							  <option value="48">Canada</option>
+							  <option value="49">Mexico</option>
+							  <option value="1818">American Samoa</option>
+							</select>
+						  </div>
+				  
+						  <div>
+							<label for="physicalState" style="margin-bottom: 0.25rem;"><span class="star">*</span> State:</label>
+							<select class="input-narrow" tabindex="19" name="addressDTO.physicalState" id="physicalState" autocomplete="off">
+							  <option value="">--</option>
+							  <option value="NH" selected>NH</option>
+							  <option value="CA">CA</option>
+							  <option value="NY">NY</option>
+							</select>
+						  </div>
+						</div>
+				  
+						<!-- City + ZIP -->
+						<div class="form-row" style="display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; align-items: center;">
+						  <div style="display: flex; align-items: center; gap: 0.5rem;">
+							<label for="physicalCity"><span class="star">*</span> City:</label>
+							<input class="input-narrow" id="physicalCity" name="addressDTO.physicalCity" tabindex="20" type="text" value="SURRY" maxlength="30" autocomplete="off">
+						  </div>
+						  <div style="display: flex; align-items: center; gap: 0.5rem;">
+							<label for="physicalZipCode1" style="display: flex; align-items: center;">
+							  <span class="star" style="margin-right: 0.2rem;">*</span> ZIP:
+							</label>
+							<input class="input-narrow" id="physicalZipCode1" name="addressDTO.physicalZipCode1" tabindex="21" type="text" value="03431" maxlength="5" autocomplete="off">
+							<span>-</span>
+							<input class="input-narrow" id="physicalZipCode2" name="addressDTO.physicalZipCode2" tabindex="22" type="text" value="" maxlength="4" autocomplete="off">
+						  </div>
+						  
+						</div>
+				  
+					  </div>
+					</div>
+				  </fieldset>	
+
+
+				<!-- Demographics -->
+				<fieldset class="scheduler-border" style="margin: 0 0 0.5em 0 !important;">
+					<legend class="scheduler-border" style="margin: 0 0 0.5em 0 !important;">
+						<span class="scheduler-border">Demographics</span>
+					</legend>
+					
+					<div class="control-group" id="demographicsInfo">
+						
+						<!-- Gender and Ethnicity -->
+						<table>
+							<tbody><tr>
+								<td width="10%" class="rowht" style="padding-top: -50px;">
+									<label for="gender"><span class="star">*</span>
+										<span class="">  
+												Gender:</span>
+										</label>
+								</td>
+								<td width="40%" style="padding-bottom: 1%; padding-left: 0.5%;">
+									<label class="hidden" for="cmtGender1">Male</label>
+									<input id="cmtGender1" name="cmtGender" tabindex="34" type="radio" value="432" autocomplete="off">Male&nbsp;
+									<label class="hidden" for="cmtGender2">Female</label>
+									<input id="cmtGender2" name="cmtGender" tabindex="35" type="radio" value="431" checked="checked" autocomplete="off">Female&nbsp; 
+									<label class="hidden" for="cmtGender3">Choose not to answer</label>
+									<input id="cmtGender3" name="cmtGender" tabindex="36" type="radio" value="435" autocomplete="off">Choose not to answer</td>
+
+								<td width="15%" class="rowht">
+									<label for="cmtEthnicity">&nbsp;<span class="star">*</span>&nbsp;
+											<span class="">  
+													Ethnicity:</span>
+											</label>
+								</td>
+								<td width="25%" class="rowht">
+									&nbsp;<select id="cmtEthnicity" name="cmtEthnicity" tabindex="37" style="width:75%;" value="427" autocomplete="off"><option value="">Select One</option>
+										<option value="426">
+													Hispanic or Latino                                </option>
+										<option value="427" selected="selected">
+													Not Hispanic or Latino                            </option>
+										<option value="428">
+													Choose not to answer                              </option>
+										</select></td>
+							</tr>
+						</tbody></table>
+
+						<!-- Race -->	
+						<table>
+							<tbody><tr>
+								<td width="11%" class="rowht">
+									<label for="cmtRaceCode"><span class="star">*</span>
+										<span class="">  
+												Race:</span>
+										</label>
+												
+								</td>
+								<td class="rowht txtblk" width="48%">
+									<label class="hidden" for="cmtRaceAmericanIndian">American Indian/Alaskan Native</label>
+									<input id="cmtRaceAmericanIndian" name="cmtRaceAmericanIndian" style="vertical-align:middle;position:relative;bottom:2.5px;" tabindex="38" type="checkbox" value="1" autocomplete="off"><input type="hidden" name="_cmtRaceAmericanIndian" value="on" autocomplete="off" tabindex="39">
+										&nbsp;American Indian/Alaskan Native</td>
+								<td width="16%" class="txtblk">
+									<label class="hidden" for="cmtRaceWhite">White</label>
+									<input id="cmtRaceWhite" name="cmtRaceWhite" style="vertical-align:middle;position:relative;bottom:2.5px;" tabindex="40" type="checkbox" value="1" checked="checked" autocomplete="off"><input type="hidden" name="_cmtRaceWhite" value="on" autocomplete="off" tabindex="41">
+										&nbsp;White</td>
+								<td width="33%" class="txtblk">
+									<label class="hidden" for="cmtRaceBlackAfricanAmerican">Black/African-American</label>
+									<input id="cmtRaceBlackAfricanAmerican" name="cmtRaceBlackAfricanAmerican" style="vertical-align:middle;position:relative;bottom:2.5px;" tabindex="42" type="checkbox" value="1" autocomplete="off"><input type="hidden" name="_cmtRaceBlackAfricanAmerican" value="on" autocomplete="off" tabindex="43">
+										&nbsp;Black/African-American</td>
+							</tr>
+
+							<tr>
+								<td width="11%" class="rowht"></td>
+								<td class="rowht txtblk" width="45%">
+									<label class="hidden" for="cmtRaceNativeHawaiian">Native Hawaiian/ Other Pacific Islander</label>	
+									<input id="cmtRaceNativeHawaiian" name="cmtRaceNativeHawaiian" style="vertical-align:middle;position:relative;bottom:2.5px;" tabindex="44" type="checkbox" value="1" autocomplete="off"><input type="hidden" name="_cmtRaceNativeHawaiian" value="on" autocomplete="off" tabindex="45">
+										&nbsp;Native Hawaiian/ Other Pacific Islander</td>
+								<td width="16%" class="txtblk">
+									<label class="hidden" for="cmtRaceAsian">Asian</label>
+									<input id="cmtRaceAsian" name="cmtRaceAsian" style="vertical-align:middle;position:relative;bottom:2.5px;" tabindex="46" type="checkbox" value="1" autocomplete="off"><input type="hidden" name="_cmtRaceAsian" value="on" autocomplete="off" tabindex="47">
+										&nbsp;Asian</td>
+								<td width="33%" class="txtblk">
+									<label class="hidden" for="cmtRaceChooseNotToAnswer">Choose not to answer</label>
+									<input id="cmtRaceChooseNotToAnswer" name="cmtRaceChooseNotToAnswer" style="vertical-align:middle;position:relative;bottom:2.5px;" tabindex="48" type="checkbox" value="1" autocomplete="off"><input type="hidden" name="_cmtRaceChooseNotToAnswer" value="on" autocomplete="off" tabindex="49">
+										&nbsp;Choose not to answer</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+
+							<!-- Education Level -->
+							<tr>
+								<td width="11%" class="rowht" colspan="4">
+									<label for="cmtEducationLevel"><span class="star">*</span> 
+										<span class="">  
+												Education Level:</span>
+										</label> 
+									<span style="padding-left: 25.5%;"></span> 
+									<select id="cmtEducationLevel" name="cmtEducationLevel" tabindex="50" style="width: 395px;" value="572" autocomplete="off"><option value="">Select One</option>
+										<option value="2681">
+												Post Secondary Certificate</option>
+										<option value="573">
+												Doctorate Degree                                  </option>
+										<option value="572" selected="selected">
+												Masters Degree                                    </option>
+										<option value="571">
+												Bachelors Degree                                  </option>
+										<option value="1779">
+												3 years of college                                </option>
+										<option value="570">
+												Associates Degree                                 </option>
+										<option value="2692">
+												2 years of college</option>
+										<option value="1778">
+												1 year of college                                 </option>
+										<option value="2691">
+												High School Certificate of Attendance/Completion</option>
+										<option value="569">
+												GED                                               </option>
+										<option value="568">
+												High School Graduate                              </option>
+										<option value="574">
+												12 Year Schooling</option>
+										<option value="567">
+												11 Year Schooling</option>
+										<option value="566">
+												10 Year Schooling</option>
+										<option value="565">
+												9 Year Schooling</option>
+										<option value="564">
+												8 Year Schooling</option>
+										<option value="563">
+												7 Year Schooling</option>
+										<option value="562">
+												6 Year Schooling</option>
+										<option value="561">
+												5 Year Schooling</option>
+										<option value="560">
+												4 Year Schooling</option>
+										<option value="559">
+												3 Year Schooling</option>
+										<option value="558">
+												2 Year Schooling</option>
+										<option value="557">
+												1 Year Schooling</option>
+										<option value="556">
+												No Schooling</option>
+										<option value="4478">
+												Certificate of Attendance/Completion (Disability)</option>
+										<option value="4479">
+												Specialized Degree (e.g. MD, DDS)</option>
+										<option value="4480">
+												Vocational School Certificate</option>
+										</select></td>
+							</tr>
+							
+							<!-- Specialty Occupation --> <!-- AnD209328 starts -->
+							<tr>
+								<td width="11%" class="rowht" colspan="4">
+									<label for="cmtSplOccupationCd"><span class="star">*</span> 
+										<span class="">  
+												Specialty Occupation:</span>
+										</label>
+									<span style="padding-left: 20.8%;"></span> 
+										<select id="cmtSplOccupationCd" name="cmtSplOccupationCd" tabindex="51" style="width: 395px;" value="4938" autocomplete="off"><option value="">Select One</option>
+											<option value="4936">
+														Airline Pilot</option>
+											<option value="4931">
+														Anesthesiologist</option>
+											<option value="4935">
+														Dentist</option>
+											<option value="4934">
+														Nurse Anesthetist</option>
+											<option value="4930">
+														Physician</option>
+											<option value="4933">
+														Psychiatrist</option>
+											<option value="4932">
+														Radiologist</option>
+											<option value="4929">
+														Surgeon</option>
+											<option value="4938" selected="selected">
+														None of the above</option>
+											</select></td>
+							</tr>
+							<!-- AnD209328 ends -->							
+						</tbody></table>
+					</div>
+					
+					<!-- Language Question --><p>
+						<span class="star">*</span> <span class="txtblu"> 
+							<span class="">  
+									What is your primary language?</span>
+							</span>
+						<span style="padding-left: 5%"></span>
+						<label class="hidden" for="cmtPrimaryLanguage1">English</label>
+						<input id="cmtPrimaryLanguage1" name="cmtPrimaryLanguage" tabindex="52" type="radio" value="E" checked="checked" autocomplete="off"><span class="txtblk">&nbsp;English</span> &nbsp;
+						<label class="hidden" for="cmtPrimaryLanguage2">Other</label>
+						<input id="cmtPrimaryLanguage2" name="cmtPrimaryLanguage" tabindex="53" type="radio" value="O" autocomplete="off"><span class="txtblk">&nbsp;Other</span> &nbsp;
+						<label class="hidden" for="cmtPrimaryLanguage3">If Other, specify</label>
+							<span class="txtblk">&nbsp;
+							<span class="">  
+									If Other, specify</span>
+							</span>
+							<select id="cmtOtherPrimaryLanguage" name="cmtOtherPrimaryLanguage" tabindex="54" style="width: 200px;margin: 0.5em 0 0 0" autocomplete="off"><option value="">Select One</option>
+								<option value="4452">
+										Choose not to Answer</option>
+								<option value="4453">
+										Language Not in List</option>
+								<option value="4422">
+										Albanian</option>
+								<option value="4423">
+										American Sign Language</option>
+								<option value="4424">
+										Amharic</option>
+								<option value="4425">
+										Arabic</option>
+								<option value="4426">
+										Bengali</option>
+								<option value="4427">
+										Bosnian</option>
+								<option value="4428">
+										Cambodian</option>
+								<option value="4429">
+										Chinese</option>
+								<option value="4430">
+										Dinka</option>
+								<option value="4421">
+										French</option>
+								<option value="4431">
+										German</option>
+								<option value="4432">
+										Greek</option>
+								<option value="4433">
+										Haitian Creole</option>
+								<option value="4434">
+										Hindi</option>
+								<option value="4436">
+										Indonesian</option>
+								<option value="4435">
+										Italian</option>
+								<option value="4437">
+										Japanese</option>
+								<option value="4438">
+										Kirundi</option>
+								<option value="4439">
+										Korean</option>
+								<option value="4440">
+										Lao</option>
+								<option value="4441">
+										Malay</option>
+								<option value="4442">
+										Nepali</option>
+								<option value="4443">
+										Persian</option>
+								<option value="4444">
+										Polish</option>
+								<option value="4445">
+										Portuguese</option>
+								<option value="4446">
+										Russian</option>
+								<option value="4447">
+										Somali</option>
+								<option value="4412">
+										Spanish</option>
+								<option value="4448">
+										Swahili</option>
+								<option value="4449">
+										Tagalog</option>
+								<option value="4450">
+										Taiwanese</option>
+								<option value="4451">
+										Vietnamese</option>
+								</select></p>
+					<p><span class="star">*</span><!--ZK100329 -->
+   						  <span class="txtblu"> <!--ZK100329 -->
+					 		<span class="">  
+									Which of the following are you able to do in your primary language chosen?</span>
+							</span>
+					<label class="hidden" for="cmtPrimaryLanguageSkill">Which of the following are you able to do in your primary language chosen?</label>
+								<span class="txtblk">&nbsp;</span>
+								
+						<label class="hidden" for="cmtLangSkillRead">Read</label>
+						<input id="cmtLangSkillRead" name="cmtLangSkillRead" style="vertical-align:middle;position:relative;bottom:2.5px;" tabindex="55" type="checkbox" value="R" checked="checked" autocomplete="off"><input type="hidden" name="_cmtLangSkillRead" value="on" autocomplete="off" tabindex="56">&nbsp;Read
+						&nbsp;
+						<label class="hidden" for="cmtLangSkillWrite">Write</label>
+						<input id="cmtLangSkillWrite" name="cmtLangSkillWrite" style="vertical-align:middle;position:relative;bottom:2.5px;" tabindex="57" type="checkbox" value="W" checked="checked" autocomplete="off"><input type="hidden" name="_cmtLangSkillWrite" value="on" autocomplete="off" tabindex="58">&nbsp;Write
+						&nbsp;
+						<label class="hidden" for="cmtLangSkillSpeak">Speak</label>
+						<input id="cmtLangSkillSpeak" name="cmtLangSkillSpeak" style="vertical-align:middle;position:relative;bottom:2.5px;" tabindex="59" type="checkbox" value="S" checked="checked" autocomplete="off"><input type="hidden" name="_cmtLangSkillSpeak" value="on" autocomplete="off" tabindex="60">&nbsp;Speak
+						&nbsp;
+					</p>
+					<!-- high School graduation -->
+					<table>
+						
+						<tbody><tr>
+								<td class="rowht txtblk" width="55%">
+									<label for="highSchoolGradYr"><span class="star">*</span> 
+										<span class="">  
+												Please enter the year of your High School graduation.</span>
+										</label>
+								</td>
+								<td class="rowht txtblk" width="20%">
+									<input id="cmtHighSchoolGradYr" name="cmtHighSchoolGradYr" tabindex="61" class="txt80 form-control fleft numeric textbox-X-clear" type="text" value="1989" maxlength="4" autocomplete="off"></td>
+								<td class="rowht txtblk" width="25%">
+									<input id="cmtHighSchoolGradYrNA" name="cmtHighSchoolGradYrNA" tabindex="62" type="checkbox" value="9999" autocomplete="off"><input type="hidden" name="_cmtHighSchoolGradYrNA" value="on" autocomplete="off" tabindex="63">
+										&nbsp;Choose not to answer</td>
+							</tr>
+					</tbody></table>
+					
+					
+					<!-- U.S Citizen -->
+					<p>
+						<span class="star">*</span> 
+							<span class="txtblu"> 
+								<span class="">  
+										Are you a U.S.Citizen or U.S.National?</span>
+								</span>
+						<span style="padding-left: 5%"></span>
+						<label class="hidden" for="cmtCitizenInd1">Yes</label>
+						<input id="cmtCitizenInd1" name="cmtCitizenInd" tabindex="64" type="radio" value="Y" checked="checked" autocomplete="off"><span class="txtblk">&nbsp;Yes</span> &nbsp;
+						<label class="hidden" for="cmtCitizenInd2">No</label>
+						<input id="cmtCitizenInd2" name="cmtCitizenInd" tabindex="65" type="radio" value="N" autocomplete="off"><span class="txtblk">&nbsp;No</span>
+					</p>
+
+					<!-- Alien Type -->
+					<div class="control-group" id="alienInfo" style="display: none;">
+						<table width="100%">
+							<!-- Type of Authorization (Alien Type) -->
+							<tbody><tr>
+								<td width="2%" class="rowht"></td>
+								<td width="38%" class="rowht">
+									<label for="cmtAlienType" class="notmandatory">
+										<span class="">   
+												Type of authorization to work in the U.S.:</span>
+										</label>
+								</td>
+								<td width="50%" class="rowht"> 
+										<select id="cmtAlienType" name="cmtAlienType" tabindex="66" style="width: 98.5%" autocomplete="off"><option value="">Select One</option>
+											<option value="439">
+														Alien Registration Receipt Card (AR-3A)           </option>
+											<option value="438">
+														Alien Registration Receipt Card (I-151)           </option>
+											<option value="437">
+														Conditional Resident Alien Card (I-551)           </option>
+											<option value="442">
+														Employment Authorization Card (I-688A)            </option>
+											<option value="444">
+														Employment Authorization Card (I-766)             </option>
+											<option value="441">
+														Fee Receipt (I-689)                               </option>
+											<option value="447">
+														Foreign Passport (contains I-551 stamp or I-94 att</option>
+											<option value="440">
+														Memorandum of Creation of Record of Lawful Permane</option>
+											<option value="449">
+														Other                                             </option>
+											<option value="446">
+														Re-entry Permit (I-327)                           </option>
+											<option value="445">
+														Refugee Travel Document (I-571)                   </option>
+											<option value="436">
+														Resident Alien Card (I-551)                       </option>
+											<option value="443">
+														Temporary Resident Card (I-688)                   </option>
+											</select></td>
+							</tr>
+							
+							<!-- Alien Authorization # and Expiration Date -->
+							<tr>
+								<td width="2%" class="rowht"></td>
+								<td width="38%" class="rowht">
+									<label for="cmtAlienNumber" class="notmandatory">
+										<span class="">   
+												Alien Authorization Number:</span>
+										</label> 
+								</td>
+								<td width="50%" class="rowht">
+									<input id="cmtAlienNumber" name="cmtAlienNumber" tabindex="67" class="txt120 form-control textbox-X-clear" type="text" value="" maxlength="11" autocomplete="off"><label for="dbaName" class="notmandatory">
+										<span class="">   
+												Expiration Date:</span>
+										</label>
+									<span style="padding-left: 4%"></span>
+									<input id="cmtAlienExpireDate" name="cmtAlienExpireDate" tabindex="68" class="txt80 form-control textbox-X-clear hasDatepicker" type="text" value="" maxlength="10" autocomplete="off"><!--ZK132403 removed numeric-->
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+					
+					
+					<!-- Disability -->
+					<p>
+						<span class="star">*</span> <span class="txtblu"> 
+							<span class="">  
+									Do you consider yourself disabled?</span>
+							</span>
+						<span style="padding-left: 7.9%"></span>
+						<label class="hidden" for="cmtDisability1">Yes</label>
+						<input id="cmtDisability1" name="cmtDisability" tabindex="69" type="radio" value="489" checked="checked" autocomplete="off"><span class="txtblk">&nbsp;Yes</span> &nbsp;
+						<label class="hidden" for="cmtDisability2">No</label>
+						<input id="cmtDisability2" name="cmtDisability" tabindex="70" type="radio" value="490" autocomplete="off"><span class="txtblk">&nbsp;No</span> &nbsp;
+						<label class="hidden" for="cmtDisability3">Choose not to answer</label>
+						<input id="cmtDisability3" name="cmtDisability" tabindex="71" type="radio" value="491" autocomplete="off"><span class="txtblk">&nbsp;Choose not to answer</span>
+					</p>
+					
+					
+					<!-- SAT170022 Starts -->
+					<!-- Voc Rehab --> <!-- SAT172822 -->
+					<!-- SAT170022 Ends -->
+										
+				</fieldset>
+
+				<div class="btmbtns" style="padding-left: 25px; padding-right: 25px;">
+				<button type="submit" tabindex="72" class="btn btn-primary" name="cancel" value="Cancel" data-toggle="modal" data-target="#showCancelConfirmation" autocomplete="off">
+					Cancel</button>
+				<span class="fright">
+					<button type="submit" tabindex="73" class="btn btn-primary" name="Next" value="Save" autocomplete="off">Save</button>
+					</span>
+				</div>
+				<input id="cmtSpdStatusCd" name="cmtSpdStatusCd" value="5348" type="hidden" autocomplete="off" tabindex="74"><input id="ssnVerifyCd" name="ssnVerifyCd" value="3052" type="hidden" autocomplete="off" tabindex="75"><input id="ssnReasonCd" name="ssnReasonCd" value="3054" type="hidden" autocomplete="off" tabindex="76"><input id="cmtCitizenIndTemp" name="cmtCitizenIndTemp" value="Y" type="hidden" autocomplete="off" tabindex="77"><input id="cmtPersonalInfoChanged" name="cmtPersonalInfoChanged" value="false" type="hidden" autocomplete="off" tabindex="78"><input id="activePhysicalAddressExists" name="addressDTO.activePhysicalAddressExists" value="true" type="hidden" autocomplete="off" tabindex="79"><input id="activeAddressExists" name="addressDTO.activeAddressExists" value="true" type="hidden" autocomplete="off" tabindex="80"><input id="physicalAddressId" name="addressDTO.physicalAddressId" value="5115912" type="hidden" autocomplete="off" tabindex="81"><input id="addressId" name="addressDTO.addressId" value="7353736" type="hidden" autocomplete="off" tabindex="82"><input id="cmtBirthDtExist" name="cmtBirthDtExist" value="true" type="hidden" autocomplete="off" tabindex="83"><input id="enableDOB" name="enableDOB" value="false" type="hidden" autocomplete="off" tabindex="84"><!-- SV231333 -->
+				<input id="cmtHighSchoolGradYrNATemp" name="cmtHighSchoolGradYrNATemp" type="hidden" value="" autocomplete="off" tabindex="85"><div class="modal fade" id="cmtPersonalInfoChangedModal">
+			  <div class="modal-dialog" style="position:absolute; top:200px; left:400px;">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="btn fright" data-dismiss="modal" aria-hidden="true" autocomplete="off" tabindex="86">x</button>
+			        <h4 class="modal-title">Personal Information Change Confirmation</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>Your Personal Information has been modified. Click Yes to confirm your changes.</p>
+			      </div>
+			      <div class="modal-footer">
+			         <div class="btmbtns" style="padding-left:25px; padding-right:25px;">
+				        <span class="fleft"><button type="submit" name="Y" tabindex="87" class="btn btn-default" value="Y" autocomplete="off">
+							Yes</button></span>
+				        <button type="button" class="btn btn-primary" tabindex="88" data-dismiss="modal" value="N" autocomplete="off">
+						 	No</button>
+			        </div>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			
+			 <div class="modal fade" id="showCancelConfirmation">
+		<div class="modal-dialog" style="position:absolute; margin-top: 20%;margin-left: 30%">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn fright" data-dismiss="modal" aria-hidden="true" autocomplete="off" tabindex="89">x</button>
+					<h4 class="modal-title">Cancel Confirmation</h4>
+				</div>
+				<div class="modal-body">
+					<p>If you cancel, the information that was just entered on this page will be lost.<br></p>
+					<p>You will be redirected to&nbsp;Main Menu.</p>
+					<p>Do you still want to cancel?</p>
+				</div>
+				<div class="modal-footer">
+					<div class="btmbtns" style="padding-left:25px; padding-right:25px;">
+						<span class="fleft"><button type="submit" name="Cancel" tabindex="90" class="btn btn-default" value="Cancel" autocomplete="off">
+							Yes</button></span>
+						<button type="button" class="btn btn-primary" tabindex="91" data-dismiss="modal" autocomplete="off">
+							No</button>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+<div class="modal fade" id="showBlockBox" data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog" style="position:absolute; margin-top: 20%;margin-left: 30%">
+				<div class="modal-content">
+					<div class="modal-header">
+						
+					</div>
+					<div class="modal-body">
+						<p>Please call the Unemployment Assistance Hotline at 603-271-7700.</p>
+						<p>Please click on Logout button below to close the application.</p>
+					</div>
+					<div class="modal-footer">
+						<div class="btmbtns" style="padding-left:25px; padding-right:25px;">
+							<span class="fleft">
+							<button type="button" tabindex="92" name="Logout" value="Logout" class="btn btn-default" id="logoutButton" onclick="formSubmit()" autocomplete="off">
+								Logout</button></span>							
+						</div>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+<div>
+<input type="hidden" name="_csrf" value="7bc8f825-01c3-4c5a-bf7a-c6bf71385e08" autocomplete="off" tabindex="93">
+</div></form></div>
+	</div></div>
+	
+	 <!-- Bootstrap/jQuery Modal Dialog/Help -->
+      <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+         <div class="modal-dialog" style="width:400px; position:absolute; top:75px; left:200px;">
+            <div class="modal-content" style="border-bottom:none;">
+               <div class="modal-header" style="border-bottom:none;">
+                  <h4 class="modal-title" id="myModalLabel" style="border-bottom:none; width:50%; float:left;">Help Dialog</h4>
+                  <span style="float:right; margin-right:8px;"><img data-dismiss="modal" src="images/closehelp.png" width="65" height="19" alt=" "></span>
+               </div>
+               <div class="modal-body">
+                  <!--- Just space to give modal some height -->
+                  <br><br><br><br><br>
+                  <br><br><br><br><br>
+               </div>
+               <div class="modal-footer" style="border-top:none;"></div>
+            </div>
+         </div>
+      </div>
+      <div id="footer">		 	
+		 	NHES is a proud member of America's Workforce Network and NH works.<br>
+			NHES is an Equal Opportunity Employer and complies with the American's with Disabilities Act. Auxiliary aids and services are available upon request of individuals with disabilities.  &nbsp; &nbsp; 
+		</div>
+		<div id="formRefNumberFooter">
+			<span style="font:normal 12px verdana !important; ">
+					</span>
+			<span style="position: absolute; left: 885px;">
+				DeploymentV&nbsp;1.0-SNAPSHOT  -  04/04/2025</span>			
+		</div>
+		<script>
+var serverTimeOut = 1800;
+var usrRole = "undefined";
+
+	usrRole = "claimant";
+</script>	
+<div class="modal fade" id="showSessionConfirmation" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog" style="position:absolute; margin-top: 20%;margin-left: 30%">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn fright" data-dismiss="modal" aria-hidden="true" autocomplete="off" tabindex="94">x</button>
+					<h4 class="modal-title">Session Confirmation</h4>
+				</div>
+				<div class="modal-body">
+					<p>This session will expire shortly.  Please click on the Extend button to extend your session.</p>
+				</div>
+				<div class="modal-footer">
+					<div class="btmbtns" style="padding-left:25px; padding-right:25px;">
+						<span class="fleft"><button type="button" tabindex="95" class="btn btn-default" id="extendSession" data-dismiss="modal" autocomplete="off">
+							Extend</button></span>
+						<button type="button" id="cancelSessionAlert" class="btn btn-primary" tabindex="96" data-dismiss="modal" autocomplete="off">
+							Cancel</button>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<div class="modal fade" id="showSessionTimedoutMessage" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog" style="position:absolute; margin-top: 20%;margin-left: 30%">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Session Timed Out</h4>
+				</div>
+				<div class="modal-body">
+					<p>Your session has timed out.  You must login again to continue.</p>
+				</div>
+					<div class="modal-footer">
+					<div class="btmbtns" style="padding-left:25px; padding-right:25px;">
+						<button type="button" id="sessionTimedout" class="btn btn-primary" tabindex="97" data-dismiss="modal" autocomplete="off">
+							Ok</button>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-2" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
